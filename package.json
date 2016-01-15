@@ -1,0 +1,24 @@
+{
+  "name": "pngvalue",
+  "version": "1.0.0",
+  "description": "A package for storing and retrieving values from a cached PNG image.",
+  "main": "pngvalue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JoelPM/pngvalue.js.git"
+  },
+  "keywords": [
+    "png",
+    "cache",
+    "browser"
+  ],
+  "author": "Joel Meyer <joel.meyer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoelPM/pngvalue.js/issues"
+  },
+  "homepage": "https://github.com/JoelPM/pngvalue.js#readme"
+}
