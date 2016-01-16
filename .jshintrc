@@ -1,0 +1,8 @@
+{
+  "strict": true,
+  "browser": true,
+  "indent": 2,
+  "predef": [
+    "-Promise"
+  ]
+}
