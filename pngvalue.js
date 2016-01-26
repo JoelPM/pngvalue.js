@@ -127,5 +127,5 @@
     });
   };
 
-  exports.PNGValue = PNGValue;
+  exports = PNGValue;
 })(typeof exports === 'undefined' ? this.PNGValue={} : exports);
