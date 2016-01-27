@@ -98,7 +98,7 @@ PNGValue.prototype.get = function() {
 PNGValue.prototype.set = function(value, duration, unit) {
   console.log("value: " + JSON.stringify(value) + " - duration: " + duration + " - unit: " + unit);
 
-  var seconds = this.toSeconds(duration, unit);
+  var seconds = toSeconds(duration, unit);
   var url = this.url;
 
   return new Promise(function(resolve, reject) {
