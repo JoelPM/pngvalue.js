@@ -1,6 +1,6 @@
 {
   "name": "pngvalue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A package for storing and retrieving values from a cached PNG image. Requires the pngvalue backend.",
   "main": "pngvalue.js",
   "scripts": {
