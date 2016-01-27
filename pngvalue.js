@@ -84,7 +84,7 @@ PNGValue.prototype.get = function() {
         bytes.push(data[i*4]);
       }
 
-      resolve(this.parse(bytes));
+      resolve(parse(bytes));
     };
 
     img.onerror = function() {
