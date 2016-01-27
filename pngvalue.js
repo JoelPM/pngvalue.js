@@ -88,7 +88,7 @@ PNGValue.prototype.get = function() {
     };
 
     img.onerror = function() {
-      resolve(null);
+      reject(null);
     };
 
     img.src = url;
