@@ -96,14 +96,17 @@ PNGValue.prototype.get = function() {
 };
 
 PNGValue.prototype.set = function(value, duration, unit) {
-  console.log("value: " + JSON.stringify(value) + " - duration: " + duration + " - unit: " + unit);
-
   var seconds = toSeconds(duration, unit);
   var url = this.url;
 
   return new Promise(function(resolve, reject) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
+    if ("withCredentials" in xhr) {
+      xhr.open('GET', url, true);
+    } else if (typeof XDomainRequest != "undefined") {
+      xhr = new XDomainRequest();
+      xhr.open('GET', url);
+    }
 
     try {
       xhr.overrideMimeType("image/png");
